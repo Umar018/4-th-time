@@ -1,0 +1,50 @@
+//chatgpt dan test qilish uchun misollar oldim
+
+//TODO addContacts
+console.log(addContacts("Ali", "941234567"));  // ✅ "Kontakt qoshildi"
+console.log(addContacts("Vali", "941234568")); // ✅ "Kontakt qoshildi"
+console.log(addContacts("Ali", "941234567"));  // ❌ "Bu kontakt bor" (Duplicate)
+console.log(addContacts("Botir", "12345"));    // ❌ "raqam 9ta bolishi kerak"
+
+//TODO searchContacts
+console.log(searchContacts("941"));   
+// ✅ ["Ali: 941234567", "Vali: 941234568"]
+
+console.log(searchContacts("567"));   
+// ✅ ["Ali: 941234567"]
+
+console.log(searchContacts("000"));   
+// ❌ "Kontakt yoq"
+
+//TODO deleteContacts
+console.log(deleteContacts("Ali"));   
+// ✅ "kontakt ochib ketdi"
+
+console.log(deleteContacts("941234568")); 
+// ✅ "kontakt ochib ketdi"
+
+console.log(deleteContacts("941234569")); 
+// ❌ "Bunday kontakt yoq"
+
+//TODO listContacts
+console.log(listContacts());  
+// ✅ ["Ali: 941234567", "Vali: 941234568"]
+
+// After deleting all contacts:
+console.log(listContacts());  
+// ❌ "kontakt yoq"
+
+//TODO helpContacts
+console.log(helpContacts());
+/* ✅
+add: Yangi kontakt qo‘shish
+search: Kontaktni qidirish
+delete: Kontaktni o‘chirish
+list: Barcha kontaktlarni ko‘rsatish
+help: Mavjud komandalarni ko‘rsatish
+exit: Dasturdan chiqish
+*/
+
+//TODO exitContacts
+console.log(exitContacts()); 
+// ✅ "Dasturdan chiqish..."
